@@ -1,0 +1,72 @@
+@import url('./styles/fonts.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #171717;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0px 30px 0px;
+  background-color: var(--color-1);
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+header a:hover {
+  opacity: 1;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header div a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+header div a:hover {
+  opacity: 1;
+  background-color: #202020;
+}
+
+
+.App {
+  font-family: 'Roboto', sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer {
+  opacity: 0.5;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: space-between
+}
+
+footer img {
+  width: 50px;
+  height: auto;
+}
