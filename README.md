@@ -21,9 +21,3 @@ cd todo-app-fullstack
 # Instalar dependencias
 pnpm install && cd front-end && pnpm install
 ```
-
-## ⚡ Configuración
-```bash
-cp back-end/.env.example back-end/.env
-cp front-end/.env.example front-end/.env
-```
