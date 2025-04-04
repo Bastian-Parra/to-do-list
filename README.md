@@ -15,7 +15,7 @@
 ## 🛠️ Instalación
 ```bash
 # Clonar repositorio
-git clone https://github.com/tu-usuario/todo-app-fullstack.git
+git clone https://github.com/Bastian-Parra/to-do-list.git
 cd todo-app-fullstack
 
 # Instalar dependencias
