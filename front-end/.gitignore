@@ -24,5 +24,6 @@ dist-ssr
 *.sw?
 
 # Archivos de entorno (no subir a Git)
+.env
 **/.env
 **/.env.*

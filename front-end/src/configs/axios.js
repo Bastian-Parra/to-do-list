@@ -1,7 +1,8 @@
 import axios from 'axios'
+import config from './config'
 
 const instance = axios.create({
-    baseURL: 'https://to-do-list-urn8.onrender.com/api',
+    baseURL: config.backend,
     withCredentials: true,
 })
 
