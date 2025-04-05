@@ -17,25 +17,23 @@ const PORT = process.env.PORT || 5000
 const app = express()
 
 const options = [
-    'http://localhost:5173', // puerto por defecto vite
-    'http://localhost:5174',
-    'http://localhost:5175'
+    'https://bstydev-todolist.netlify.app',
+    'http://localhost:3000' // Para desarrollo local
 ]
-
-const corsOptions = {
-    origin: (origin, callback) => {
-        if(options.indexOf(origin) !== -1 || !origin) {
-            callback(null, true)
-        } else {
-            callback(new Error('No permitido por CORS'))
-        }
-    },
-    credentials: true,
-}
 
 
 // middleware
-app.use(cors(corsOptions))
+app.use(cors({
+    origin: function (origin, callback) {
+        if(!origin | options.includes(origin)) {
+            callback(null, true)
+        } else {
+            callback(new Error('Not allowed by CORS'))
+        }
+    },
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+}))
 app.use(express.json())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
