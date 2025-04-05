@@ -1,6 +1,6 @@
 [build]
     command = "cd front-end && pnpm install && pnpm run build"
-    publish = "front-end/build"
+    publish = "front-end/dist"
 
 [[redirects]]
     from = "/*"
