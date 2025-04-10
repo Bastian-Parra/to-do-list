@@ -2,7 +2,7 @@
 
 # 🚀 To Do List
 
-**Aplicación de tareas** con autenticación JWT, base de datos MongoDB y panel interactivo en React.
+**Aplicación de tareas** con base de datos MongoDB y panel interactivo en React.
 
 ![Badges](https://img.shields.io/badge/backend-Node.js%20%7C%20Express-success) ![Badges](https://img.shields.io/badge/frontend-React%20%7C%20Vite-blue) ![Badges](https://img.shields.io/badge/database-MongoDB-green)
 
